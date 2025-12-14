@@ -13,7 +13,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-connectDB();
+// Only connect to DB if not in test environment
+if (process.env.NODE_ENV !== 'test') {
+  connectDB();
+}
 
 app.use('/api/auth', authRoutes);
 app.use('/api/sweets', sweetRoutes);
@@ -29,8 +32,10 @@ app.use((err, req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+if (process.env.NODE_ENV !== 'test') {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
+}
 
 module.exports = app;

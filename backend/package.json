@@ -4,10 +4,25 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "start": "node src/server.js",
-  "dev": "nodemon src/server.js",
-  "test": "jest --watchAll --verbose"
-},
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "set NODE_ENV=test&& jest --runInBand --verbose --detectOpenHandles --forceExit",
+    "test:watch": "set NODE_ENV=test&& jest --watchAll --verbose"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 30000,
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/tests/setup.js"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -23,6 +38,7 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "jest": "^30.2.0",
+    "mongodb-memory-server": "^10.4.1",
     "nodemon": "^3.1.11",
     "supertest": "^7.1.4"
   }
