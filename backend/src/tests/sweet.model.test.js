@@ -2,14 +2,6 @@ const mongoose = require('mongoose');
 const Sweet = require('../models/Sweet');
 
 describe('Sweet Model Test', () => {
-  beforeAll(async () => {
-    await mongoose.connect(process.env.MONGODB_URI);
-  });
-
-  afterAll(async () => {
-    await mongoose.connection.close();
-  });
-
   afterEach(async () => {
     await Sweet.deleteMany({});
   });

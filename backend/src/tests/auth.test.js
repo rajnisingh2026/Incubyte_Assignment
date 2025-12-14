@@ -4,14 +4,6 @@ const User = require('../models/User');
 const mongoose = require('mongoose');
 
 describe('Auth Endpoints', () => {
-  beforeAll(async () => {
-    await mongoose.connect(process.env.MONGODB_URI);
-  });
-
-  afterAll(async () => {
-    await User.deleteMany({});
-    await mongoose.connection.close();
-  });
 
   describe('POST /api/auth/register', () => {
     it('should register a new user', async () => {
@@ -31,10 +23,20 @@ describe('Auth Endpoints', () => {
 
   describe('POST /api/auth/login', () => {
     it('should login existing user', async () => {
+      // First register the user
+      await request(app)
+        .post('/api/auth/register')
+        .send({
+          username: 'loginuser',
+          email: 'login@example.com',
+          password: 'password123'
+        });
+
+      // Then try to login
       const res = await request(app)
         .post('/api/auth/login')
         .send({
-          email: 'test@example.com',
+          email: 'login@example.com',
           password: 'password123'
         });
 
