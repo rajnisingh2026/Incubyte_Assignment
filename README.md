@@ -1,8 +1,8 @@
-# 🍬 Sweet Shop Management System
+# Sweet Shop Management System
 
 A full-stack web application for managing a sweet shop with user authentication, inventory management, and purchase functionality.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Node.js** with Express.js
@@ -58,7 +58,7 @@ Incubyte/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v14 or higher)
@@ -114,7 +114,7 @@ npm start
 
 The frontend will open automatically at `http://localhost:3000`
 
-## 🧪 Running Tests
+## Running Tests
 
 ### Backend Tests
 
@@ -130,7 +130,7 @@ The test suite includes:
 - ✅ Sweet controller tests (CRUD operations)
 - ✅ Purchase and restock functionality tests
 
-## 📝 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/register` - Register a new user
@@ -145,7 +145,7 @@ The test suite includes:
 - `POST /api/sweets/:id/purchase` - Purchase a sweet (Authenticated)
 - `POST /api/sweets/:id/restock` - Restock a sweet (Admin only)
 
-## 👤 User Roles
+## User Roles
 
 ### Regular User
 - View all sweets
@@ -159,7 +159,7 @@ The test suite includes:
 - Delete sweets
 - Restock inventory
 
-## 🔐 Environment Variables
+## Environment Variables
 
 ### Backend (.env)
 ```env
@@ -174,7 +174,7 @@ NODE_ENV=development
 REACT_APP_API_URL=http://localhost:5000/api
 ```
 
-## ✅ Fixed Issues
+## Fixed Issues
 
 1. **Test Configuration**: Added `dotenv` configuration to all test files to properly load environment variables
 2. **File Structure**: Fixed corrupted `AddSweetModal.js` component
@@ -182,17 +182,17 @@ REACT_APP_API_URL=http://localhost:5000/api
 4. **Authentication**: JWT authentication middleware working correctly
 5. **CORS**: Enabled CORS for frontend-backend communication
 
-## 🎯 Features
+## Features
 
-- ✨ User authentication with JWT
-- 🔒 Role-based access control (User/Admin)
-- 📦 Inventory management
-- 🔍 Search and filter functionality
-- 🛒 Purchase system with stock validation
-- 📊 Real-time stock updates
-- 📱 Responsive design
+- User authentication with JWT
+- Role-based access control (User/Admin)
+- Inventory management
+- Search and filter functionality
+- Purchase system with stock validation
+- Real-time stock updates
+- Responsive design
 
-## 📸 Testing the Application
+## Testing the Application
 
 1. **Register a new user** at `/register`
 2. **Login** with your credentials at `/login`
@@ -201,7 +201,7 @@ REACT_APP_API_URL=http://localhost:5000/api
 5. **Purchase** sweets (reduces inventory)
 6. **Admin**: Add, update, delete, and restock sweets
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend not connecting to MongoDB
 - Check your `MONGODB_URI` in the `.env` file
@@ -218,16 +218,10 @@ REACT_APP_API_URL=http://localhost:5000/api
 - Check `.env` file exists in backend directory
 - Run `npm install` to ensure all dependencies are installed
 
-## 📄 License
-
-ISC
-
-## 👨‍💻 Development
+## Development
 
 - Run backend: `cd backend && npm run dev`
 - Run frontend: `cd frontend && npm start`
 - Run tests: `cd backend && npm test`
 
 ---
-
-**Made with ❤️ for Incubyte**
