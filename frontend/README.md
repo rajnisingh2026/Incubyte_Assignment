@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Sweet Shop Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack MERN application for managing a sweet shop with user authentication, inventory management, and admin controls.
 
-## Available Scripts
+##  Features
 
-In the project directory, you can run:
+- User authentication with JWT
+- Sweet inventory management
+- Search and filter functionality
+- Purchase system with quantity tracking
+- Admin panel for stock management
+- Responsive design
 
-### `npm start`
+##  Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Backend:**
+- Node.js & Express
+- MongoDB & Mongoose
+- JWT Authentication
+- Jest for testing
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Frontend:**
+- React
+- Axios for API calls
+- React Router
+- Context API
 
-### `npm test`
+##  Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Setup instructions continue...]
 
-### `npm run build`
+##  My AI Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**AI Tools Used:** Claude AI (Anthropic)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**How I Used AI:**
+1. Initial project structure and boilerplate generation
+2. Test case development following TDD principles
+3. Debugging authentication middleware
+4. Optimizing MongoDB queries
+5. React component structure suggestions
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Reflection:**
+AI significantly accelerated the development process, particularly in:
+- Writing comprehensive test cases
+- Implementing best practices for security
+- Creating consistent code patterns
 
-### `npm run eject`
+However, I maintained full control over:
+- Architecture decisions
+- Business logic implementation
+- Code review and refactoring
+- Understanding every line of code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📸 Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[Add screenshots here]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🧪 Running Tests
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+\`\`\`bash
+cd backend
+npm test
+\`\`\`
